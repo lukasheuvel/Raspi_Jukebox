@@ -1,0 +1,160 @@
+A1	Stairway to Heaven	Led Zeppelin	1971
+B1	Whole Lotta Love	Led Zeppelin	1971
+C1	Let's Twist Again	Chubby Checker	1961
+D1	Everything Gonna'Be Alright	Chubby Checker	1961
+E1	Tequila	The Champs	1964
+F1	Limbo Rock	The Champs	1964
+G1	House of the Rising Sun	The Animals	1964
+H1	Don't let me be	The Animals	1964
+J1	(I Can't Get No) Satisfaction	The Rolling Stones	1965
+K1	The under assistent	The Rolling Stones	1965
+L1	Take Five	The Dave Brubeck Quartet	1959
+M1	Blue Rondo La Turk	The Dave Brubeck Quarter	1959
+N1	Good Vibrations	The Beach Boys	1966
+P1	Let's got for a while	The Beach Boys	1966
+Q1	Paint it Black	The Rolling Stones	1966
+R1	Long Long While	The Rolling Stones	1966
+S1	A White Shade of Pale	Procol Harum	1967
+T1	Lime Street Blues	Procol Harum	1967
+U1	Light my Fire	The Doors	1967
+V1	The Crystal Ship	The Doors	1967
+A2	Nights In White Satin	The Moody Blues	1968
+B2	Cities	The Moody Blues	1968
+C2	Strawberry Fields Forever	The Beatles	1967
+D2	Penny Lane	The Beatles	1967
+E2	Fire	Arthur Brown	1968
+F2	I put a Spell on You	Arthur Brown	1968
+G2	Born to be wild	Steppenwolf	1968
+H2	Magic Carpet Ride	Steppenwold	1968
+J2	Hey Jude	The Beatles	1968
+K2	Revolution	The Beatles	1968
+L2	On The Road Again	Canned Heat	1968
+M2	World in a Jug	Canned Heat	1968
+N2	Jumpin' Jack Flash	The Rolling Stones	1968
+P2	Child Of The Moon	The Rolling Stones	1968
+Q2	Hound Dog	Elvis Presley	1969
+R2	Don't be Cruel	Elvies Presley	1969
+S2	Long and Winding Road	The Beatles	1969
+T2	For You Blue	The Beatles	1969
+U2	Space Oddity	David Bowie	1973
+V2	Man who sold the World	David Bowie	1973
+A3	Proud Mary	Creedence Clearwater	1969
+B3	Born on the Bayou	Creedence Clearwater	1969
+C3	Whole Lotte Love	Led Zeppelin	1969
+D3	Living Loving Maid	Led Zeppelin	1969
+E3	5th Symphony	Ekseption	1969
+F3	Sabre Dance	Ekseption	1969
+G3	Bad Moon Rising	Creedence Clearwater	1969
+H3	Lodi	Creedence Clearwater	1969
+J3	Child in Time	Deep Purple	1979
+K3	Woman from Tokyo	Deep Purple	1979
+L3	In-A-Gada-Da-Vida	Iron Butterfly	1968
+M3	Easy Rider	Iron Butterfly	1968
+N3	Lucky Man	Emerson, Lake & Palmer	1970
+P3	Knife-Edge	Emerson, Lake & Palmer	1970
+Q3	Proud Mary	Ike & Tina Turner	1971
+R3	Funkier than Mosquitos	Ike & Tina Turner	1971
+S3	Riders on the Storm	The Doors	1971
+T3	Changeling	The Doors	1971
+U3	Imagine	John Lennon	1971
+V3	Give Peace a Chance	John Lennon	1971
+A4	Ain't no sunshine	Bill Withers	1974
+B4	Harlem	Bill Withers	1974
+C4	School's Out	Alice Cooper	1972
+D4	Eighteen	Alice Cooper	1972
+E4	Sylvia	Focus	1972
+F4	Love Remembered	Focus	1972
+G4	Easy Livin' Uriah Heep	1972
+H4	Lady in Black	Uriah Heep	1972
+J4	Halo of Flies	Alice Cooper	1972
+K4	Under my Wheels	Alice Cooper	1972
+L4	Une Belle Histoire	Michel Fugain	1972
+M4	Allez, bouge-toi	Michel Fugain	1972
+N4	Listen to the Music	The Doobie Brothers	1972
+P4	Toulouse Street	The Doobie Brothers	1972
+Q4	Radar Love	Golden Earing	1973
+R4	The Song is Over	Golden Earing	1973
+S4	Roll over Beethoven	Electric Light Orchestra	1973
+T4	Queen of the Hours	Electric Light Orchestra	1973
+U4	Angie	The Rolling Stones	1973
+V4	Silver Train	The Rolling Stones	1973
+A5	Smoke on the Water	Deep Purple	1973
+B5	Smoke on the Water (live)	Deep Purple	1973
+C5	Desperado	Linda Rondstadt	1973
+D5	Silver Threads	Linda Rondstadt	1973
+E5	The Jean Genie	David Bowie	1973
+F5	Ziggy Stardust	David Bowie	1973
+G5	School	Supertramp	1974
+H5	School (live)	Supertramp	1974
+J5	You Ain't Seen Nothing Yet	Bachman-Turner-OverDrive	1974
+K5	Takin' Care of Business	Bachman-Turner-OverDrive	1974
+L5	One of these nights	Eagles	1975
+M5	Visions	Eagles	1975
+N5	Bohemian Rhapsody	Queen	1975
+P5	I'm in love with	Queen	1975
+Q5	Dancing Queen	ABBA	1976
+R5	That's me	ABBA	1976
+S5	Music	John Miles	1976
+T5	Putting my new song	John Miles	1976
+U5	The Snow Goose	Camel	1975
+V5	Freefall	Camel	1975
+A6	Let's Stick Together	Bryan Ferry 1976
+B6	Sea Breeze	Bryan Ferry	1976
+C6	Hotel California	Eagles	1977
+D6	Pretty Maids in a Row	Eagles	1977
+E6	Paradise by the Dashboard Light	Meatloaf	1977
+F6	Bat Overture	Meatloaf	1977
+G6	Year of the Cat	Al Stewart	1977
+H6	Broadway Hotel	Al Stewart	1977
+J6	Peter Gunn	Emerson, Lake & Palmer	1977
+K6	Knife Edge	Emerson, Lake & Palmer	1977
+L6	She's Not There	Santana	1977
+M6	Zulu	Santana	1977
+N6	Sultans of Swing	Dire Straits	1978
+P6	Eastbound Train	Dire Straits	1978
+Q6	Baker Street	Gerry Refferty	1978
+R6	Big Change	Gerry Refferty	1978
+S6	Don't Bring me down	Electric Light Orchestra	1979
+T6	Dreaming of 4000	Electric Light Orchestra	1979
+U6	Voulez Vouse	ABBA	1979
+V6	Angel Eyes	ABBA	1979
+A7	Street Life	The Crusaders	1979
+B7	The Hustler	The Crusaders	1979
+C7	Every Little Thing She Does	The Police	1981
+D7	Shambelle	The Polic	1981
+E7	Private Investigations	Dire Straits	1982
+F7	Badges Posters	Dire Straits	1982
+G7	Old and Wise	The Alan Parsons Project	1982
+H7	Old and Wise	The Alan Parsons Project	1982
+J7	Bad to the Bone	George Thorogood	1982
+K7	I Drink Alone	George Thorogood	1982
+L7	Old Time Rock and Roll	Bob Seger	1983
+M7	Roll me Away	Bob Seger	1983
+N7	The Wall Part 2	Pink Floyd	1984
+P7	One of my Turns	Pink Floyd	1984
+Q7	Gimme all your Lovin'	ZZ Top	1984
+R7	Trade Me	ZZ Top	1984
+S7	Smugglers Blues	Glenn Frey	1984
+T7	New Love	Glenn Frey	1984
+U7	Careless Whisper	George Michael	1984
+V7	Careless Whisper	George Micahel	1984
+A8	The Reflex	Duran Duran	1984
+B8	Make me smile	Duran Duran	1984
+C8	Dancing In the Street	David Bowie & Mick Jagger	1985
+D8	Dancing In the Street	David Bowie & Mick Jagger	1985
+E8	You Can Leave Your Hat On	Joe Cocker	1986
+F8	Out Out The Light	Joe Cocker	1986
+G8	Unchain my Heart	Joe Cocker	1987
+H8	The One	Joe Cocker	1987
+J8	Paradise City	Guns N' Roses	1987
+K8	Used to love her	Guns N' Roses	1987
+L8	Summer of 69	Bryan Adams	1986
+M8	Kids Wanna Rock	Bryan Adams	1986
+N8	Stay	Jackon Browne	1978
+P8	Rosie	Jackson Browne	1978
+Q8	Walking on Sunshine	Katrina & The Waves	1983
+R8	Going Down to Liverpool	Katrina & The Waves	1983
+S8	Happy Birthday	Stevie Wonder	1980
+T8	Happy Birthday	Stevie Wonder	1980
+U8	In the Summertime	Mungo Jerry	1970
+V8	Mighty man	Mungo Jerry	1970

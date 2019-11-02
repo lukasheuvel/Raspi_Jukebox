@@ -1,0 +1,144 @@
+.GridViewEditRow input[type=text] {width:50px;} /* size textboxes */
+.GridViewEditRow select {width:50px;} /* size drop down lists */    
+
+.tab_green_light { background-color: #6CC469; }
+.tab_green_dark { background-color: #34B233; }
+.tab_blue_light { background-color: #E4F1FA; }
+.tab_blue_dark { background-color: #004A68; }
+
+.TabButtons {
+    display: block;
+    float: right;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.NavButton {
+    width: 50px;
+    height: 23px;
+    font: bold 12px verdana;
+    line-height: 10px;
+    border-radius: 10px;
+    border: solid 1px; 
+    border-color: gray; 
+}
+
+.TabNormal {
+    color: Black;
+    float: left;
+    display: block;
+    padding: 4px 18px 4px 18px;
+    background-color: #6CC469;
+    font: bold 14px verdana;
+    border: 1px solid black;
+    border-radius: 0px 15px 0px 0px;
+    margin-right: 1px;
+}
+
+.TabSelected {
+    color: White;
+    float: left;
+    display: block;
+    padding: 4px 18px 4px 18px;
+    background-color: #004A68;
+    font: bold 14px verdana;
+    border-radius: 0px 15px 0px 0px;
+    margin-right: 1px;
+}
+
+.TabNormal:hover {
+    color: White;
+    background-color: #004A68;
+}
+
+.row1 { position: absolute; top: 25px; }
+.row2 { position: absolute; top: 50px; }
+.row3 { position: absolute; top: 75px; }
+.row4 { position: absolute; top: 100px; }
+.row5 { position: absolute; top: 125px; }
+.row6 { position: absolute; top: 150px; }
+.row7 { position: absolute; top: 175px; }
+.row8 { position: absolute; top: 200px; }
+.row9 { position: absolute; top: 225px; }
+
+.col1 { position: absolute; left: 10px; }
+.col2 { position: absolute; left: 150px; }
+.col3 { position: absolute; left: 220px; }
+.col4 { position: absolute; left: 375px; }
+
+.black { color: black; }
+.gray { color: dimgray; }
+.green { color: green; }
+.red { color: red; }
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+
+.View        { margin-top: 27px; border: 1px #888 solid; position: relative }
+.Button      { width: 120px; height: 23px; background-color: #EEEDE6; border: solid 1px; border-color: gray; border-radius: 3px; 
+               font-weight: bold; color: #004A68; font: bold 13px verdana; line-height: 10px;  }
+.SimButton   { width: 200px; height: 40px; background-color: cornflowerblue; color: white;  border: solid 1px; border-color: dimgray; border-radius: 20px; 
+               font-weight: bold; font: bold 13px verdana; white-space: normal; }
+.SimButtonSmall   { width: 100px; height: 23px; background-color: cornflowerblue; color: white;  border: solid 1px; border-color: dimgray; border-radius: 15px; 
+               font-weight: bold; font: bold 12px verdana; white-space: normal; }
+.CompareButton   { width: 200px; height: 40px; background-color: #EEEDE6; color: black;  border: solid 1px; border-color: dimgray; border-radius: 20px; 
+               font-weight: bold; font: bold 13px verdana; white-space: normal; }
+
+
+.CheckBox    { width: 15px; background-color: white; } 
+.Label       { width: 150px; line-height: 20px; }
+.LabelLarge  { width: 250px; }
+.HelpLabel   { line-height: 17px; position: absolute; border: 1px solid gray; font-family: verdana; font-size: 11px; background-color: #E4F1FA; padding: 8px; margin: 10px; border-radius: 5px; }
+
+.RegisterLabel  { width: 75px; line-height: 20px; text-align: right;}
+.RegisterEntry  { background-color: #FAF7CE; width: 240px; left: 95px; }
+
+.EntryLarge  { background-color: #FAF7CE; width: 200px; }
+.EntryMedium { background-color: #FAF7CE; width: 50px; }
+.EntrySmall  { background-color: #FAF7CE; width: 50px; }
+.LabelScheme { width: 100px; position: absolute; line-height: 20px; }
+.EntryScheme { background-color: #FAF7CE; width: 47px; position: absolute; }
+
+
+.ComboScheme { background-color: #FAF7CE; width: 100px; position: absolute; }
+.CheckBoxScheme  { background-color: #FAF7CE; position: absolute; border: 1px solid gray }
+
+.Combo       { background-color: #FAF7CE; width: 175px; }
+.PrioCombo   { background-color: #FAF7CE; width: 40px; font-weight: bold; }
+
+fieldset     { padding: 8px; margin: 8px; border: 1px solid silver; border-radius: 5px; }
+legend       { padding: 2px; }
+
+html {
+    font-family: verdana, sans-serif;
+    font-size: 80%;
+}
+
+body {
+    background: #ececec;
+    width: 1240px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    border: #D6D6D6 1px solid;
+    font-family: tahoma;
+}
+
+#container {
+    background: white;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#footer {
+    color: white;
+    background: #004A68;
+    text-align: center;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }

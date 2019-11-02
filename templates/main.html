@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://www.riskfeed.nl/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Seeburg | van den Heuvel</title>
+
+    <link rel="shortcut icon" href={{url_for('static', filename='favicon.ico')}} type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href={{url_for('static', filename='main.css')}}>
+</head>
+
+<body>
+    <div id="container" style="height: 800px; overflow: auto;">
+        <img src={{url_for('static', filename='seeburg-logo.png')}} style="margin-bottom: 15px;">
+        
+        <div id="MainPanel">
+            <form method="get" action="/">
+                <input type="submit" value="Queue" class="TabSelected" style="border-style:None;">
+            </form>
+        </div>
+        
+        <div class="View">
+            <table>
+                <tbody>
+                    <tr valign="top">
+                        <td>
+                            <table style="width: 300px; border: 1px black solid; margin: 0; padding: 0">
+                                <tbody>
+                                    <form method="post" action="/">
+                                        <!-- SELECT INPUTS -->
+                                        <tr>
+                                            <td style="width: 100px;"><span id="sim1_SourceLabel">Source</span>:</td>
+                                                
+                                            <td>
+                                                <select name="Selection" style="width:400px;">
+                                                    {% for Input_Track in InputList %}
+                                                    <option>{{ Input_Track }}</option>
+                                                    {% endfor %}
+                                                </select>
+                                                <input type="submit" value="Add track to queue"style="width:200px;">
+                                            </td>
+                                        </tr>
+                                    </form>
+                                    
+                                    <tr>
+                                        <td colspan="2">
+                                            <div>
+                                                <table cellspacing="0" rules="all" border="1" style="width:800px;border-collapse:collapse;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th style="width:30px;" scope="col">Slot</th>
+                                                            <th style="width:150px;" scope="col">Song</th>
+                                                            <th style="width:150px;" scope="col">Artist</th>
+                                                            <th style="width:30px;" scope="col">Time</th>
+                                                            <th style="width:150px;" scope="col">Added on</th>
+                                                        </tr>
+                                                        
+                                                        {% for entry in QueueLog %}
+                                                            <tr>
+                                                                <td> {{ entry[0]}} </td>
+                                                                <td> {{ entry[1]}} </td>
+                                                                <td> {{ entry[2]}} </td>
+                                                                <td> {{ entry[3]}} </td>
+                                                                <td> {{ entry[4]}} </td>
+                                                            </tr>
+                                                        {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                            </div>    
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                                
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="footer" style="color: white">
+        <body>lorem ipsum dolor sit amet for footer text</body>
+    </div>
+</body>
+
+</html>
