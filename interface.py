@@ -60,32 +60,32 @@ def send_gpio_signal(signalset):
     
     if GPIO.getmode() == None:
         GPIO.setmode(GPIO.BCM)
-        GPIO.setup(channel, GPIO.OUT, initial=GPIO.LOW)
+        GPIO.setup(4, GPIO.OUT, initial=GPIO.HIGH)
     
     correction = 0.005
     
     now = time()
     for headpeak in range(signalset[0]):
-        GPIO.output(4, GPIO.HIGH)
-        sleep(0.050 - correction)
         GPIO.output(4, GPIO.LOW)
+        sleep(0.050 - correction)
+        GPIO.output(4, GPIO.HIGH)
         sleep(0.015 - correction)
     
     if signalset[2] == 815:
-        GPIO.output(4, GPIO.HIGH)
-        sleep(0.815 - correction)
         GPIO.output(4, GPIO.LOW)
+        sleep(0.815 - correction)
+        GPIO.output(4, GPIO.HIGH)
         sleep(0.010 - correction)
     
     sleep(0.175-0.015 - correction)
         
     for tailpeak in range(signalset[1]):
-        GPIO.output(4, GPIO.HIGH)
-        sleep(0.050 - correction)
         GPIO.output(4, GPIO.LOW)
+        sleep(0.050 - correction)
+        GPIO.output(4, GPIO.HIGH)
         sleep(0.015 - correction)
     
-    GPIO.output(4, GPIO.LOW)
+    GPIO.output(4, GPIO.HIGH)
 
 
 if __name__ == "__main__":
