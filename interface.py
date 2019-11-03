@@ -1,5 +1,5 @@
 from time import sleep, time
-import fakegpio
+import RPi.GPIO as GPIO
 
 def encode(pos):
     lettercode = {'A':(1,'-'),
@@ -58,30 +58,34 @@ def print_signal(signalset):
     
 def send_gpio_signal(signalset):
     
+    if GPIO.getmode() == None:
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(channel, GPIO.OUT, initial=GPIO.LOW)
+    
     correction = 0.005
     
     now = time()
     for headpeak in range(signalset[0]):
-        fakegpio.output(1,'gpio.high',now)
+        GPIO.output(4, GPIO.HIGH)
         sleep(0.050 - correction)
-        fakegpio.output(1,'gpio.low',now)
+        GPIO.output(4, GPIO.LOW)
         sleep(0.015 - correction)
     
     if signalset[2] == 815:
-        fakegpio.output(1,'gpio.high',now)
+        GPIO.output(4, GPIO.HIGH)
         sleep(0.815 - correction)
-        fakegpio.output(1,'gpio.low',now)
+        GPIO.output(4, GPIO.LOW)
         sleep(0.010 - correction)
     
     sleep(0.175-0.015 - correction)
         
     for tailpeak in range(signalset[1]):
-        fakegpio.output(1,'gpio.high',now)
+        GPIO.output(4, GPIO.HIGH)
         sleep(0.050 - correction)
-        fakegpio.output(1,'gpio.low',now)
+        GPIO.output(4, GPIO.LOW)
         sleep(0.015 - correction)
     
-    fakegpio.output(1,'gpio.low',now)
+    GPIO.output(4, GPIO.LOW)
 
 
 if __name__ == "__main__":
