@@ -1,3 +1,4 @@
+import json
 from time import sleep, time
 import RPi.GPIO as GPIO
 
@@ -57,35 +58,50 @@ def print_signal(signalset):
     print(outline)
     
 def send_gpio_signal(signalset):
+
+    relay_high = GPIO.LOW
+    relay_low = GPIO.HIGH
+    
+    with open("pulsesettings",'r') as f:
+        pulse = json.load(f)
     
     if GPIO.getmode() == None:
         GPIO.setmode(GPIO.BCM)
-        GPIO.setup(4, GPIO.OUT, initial=GPIO.HIGH)
-    
-    correction = 0.005
+        GPIO.setup(4, GPIO.OUT, initial=relay_low)
     
     now = time()
+    
+    # Cycle letter stepper
     for headpeak in range(signalset[0]):
-        GPIO.output(4, GPIO.LOW)
-        sleep(0.050 - correction)
-        GPIO.output(4, GPIO.HIGH)
-        sleep(0.015 - correction)
+        GPIO.output(4, relay_high)
+        sleep(pulse['high'] - pulse['correction'])
+        GPIO.output(4, relay_low)
+        sleep(pulse['low'] - pulse['correction'])
     
     if signalset[2] == 815:
-        GPIO.output(4, GPIO.LOW)
-        sleep(0.815 - correction)
-        GPIO.output(4, GPIO.HIGH)
-        sleep(0.010 - correction)
-    
-    sleep(0.175-0.015 - correction)
+        # Keep the long high wait
+        GPIO.output(4, relay_high)
+        sleep(pulse['long_wait'] - pulse['correction'])
         
-    for tailpeak in range(signalset[1]):
-        GPIO.output(4, GPIO.LOW)
-        sleep(0.050 - correction)
-        GPIO.output(4, GPIO.HIGH)
-        sleep(0.015 - correction)
+        # The short wait (below) is shortened by 1 low pulse to compensate for
+        # any extension caused by the last low of the loop above. We therefore
+        # also imitate that here.
+        GPIO.output(4, relay_low)
+        sleep(pulse['low'] - pulse['correction'])
     
-    GPIO.output(4, GPIO.HIGH)
+    # Short wait on a low signal, for switch between letter and number steppers
+    # With compensation for any extension cause by the last low of the loops.
+    sleep(pulse['short_wait'] - pulse['low'] - pulse['correction'])
+    
+    # Cycle number stepper
+    for tailpeak in range(signalset[1]):
+        GPIO.output(4, relay_high)
+        sleep(pulse['high'] - pulse['correction'])
+        GPIO.output(4, relay_low)
+        sleep(pulse['low'] - pulse['correction'])
+    
+    # Return back to low
+    GPIO.output(4, relay_low)
 
 
 if __name__ == "__main__":
