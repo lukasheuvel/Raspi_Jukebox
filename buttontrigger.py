@@ -1,7 +1,7 @@
 import json
-# import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 from datetime import datetime
-# import interface
+import interface
 
 def yes_or_no(question):
     answer = input(question + "(y/n): ").lower().strip()
