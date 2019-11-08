@@ -1,15 +1,1 @@
-{
-    "high": 0.050,
-    "low": 0.015,
-    "long_wait": 0.815,
-    "short_wait": 0.175,
-    "correction": 0.0,
-    
-    "default": {
-        "high_length": 0.050,
-        "low_length": 0.015,
-        "long_wait": 0.815,
-        "short_wait": 0.175,
-        "correction": 0.005,
-    }
-}
+{"high": 0.02, "low": 0.015, "long_wait": 0.815, "short_wait": 0.175, "correction": 0.005, "default": {"high": 0.05, "low": 0.015, "long_wait": 0.815, "short_wait": 0.175, "correction": 0.000}}
