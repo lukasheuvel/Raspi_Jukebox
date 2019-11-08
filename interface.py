@@ -62,7 +62,7 @@ def send_gpio_signal(signalset):
     relay_high = GPIO.LOW
     relay_low = GPIO.HIGH
     
-    with open("pulsesettings",'r') as f:
+    with open("pulsesettings.json",'r') as f:
         pulse = json.load(f)
     
     if GPIO.getmode() == None:
