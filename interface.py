@@ -49,22 +49,11 @@ def encode(pos, type):
     return (headsignal, tailsignal, gap)
     
 def print_signal(signalset):
-    outline = "__________" #starting null
-    
-    for headpeak in range(signalset[0]):
-        outline += '¯_' #1 wave
-    
-    if signalset[2] == 815:
-        outline += '¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯' #815ms high
-    
-    outline += '____' #175ms low
-        
-    for tailpeak in range(signalset[1]):
-        outline += '¯_' #1 wave
-    
-    outline += '_________' #closing null
-    
-    print(outline)
+    print("\n\n")
+    print(" THIS FEATURE WAS USED FOR TESTING AND HAS BEEN REMOVED")
+    print("the goal is to eventually output the waveform as graph with pyplot")
+    print("\n\n")
+
     
 def send_gpio_signal(signalset):
 
