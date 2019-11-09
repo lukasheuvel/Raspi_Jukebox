@@ -65,4 +65,5 @@ while True:
     if GPIO.input(24) == GPIO.HIGH:
         print("Sending signal for {} | {}".format(selected_nr, datetime.now()))
         signal = interface.encode(selected_nr, 'wallomatic160')
+        print(signal)
         interface.send_gpio_signal(signal)

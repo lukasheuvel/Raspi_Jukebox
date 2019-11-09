@@ -7,7 +7,7 @@ def encode(pos, type):
     letter = pos[0]
     number = pos[1:]
     
-    if type = 'wallomatic100':
+    if type == 'wallomatic100':
         lettercode = {'A':(1,'L'),
                      'B':(1,'R'),
                      'C':(2,'L'),
@@ -38,7 +38,7 @@ def encode(pos, type):
         # ) share the same number here, but with a different gap signal.
         tailsignal = lettercode[letter][0]
     
-    if type = 'wallomatic160':
+    if type == 'wallomatic160':
         letterorder = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
                        "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V"]
         
@@ -47,7 +47,7 @@ def encode(pos, type):
         headsignal = letterorder.index(letter) + 1
         
         # Letter and number codes are seperated by a low signal of ~120ms
-        gap = ('shortlow')
+        gap = ('longhigh','shortlow')
         
         # Wall-o-matic 160 models fire pulses equal to the second number
         tailsignal = int(number)
@@ -101,6 +101,7 @@ def send_gpio_signal(signalset):
             
         if gaptype == 'shortlow':
             # Short wait on a low signal
+            GPIO.output(4, relay_low)
             sleep(pulse['short_wait'] - pulse['correction'])
     
     
