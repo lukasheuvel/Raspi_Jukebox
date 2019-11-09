@@ -1,5 +1,5 @@
 import json
-from time import sleep, time
+from time import sleep
 import RPi.GPIO as GPIO
 
 def encode(pos, type):
@@ -29,12 +29,9 @@ def encode(pos, type):
         side = lettercode[letter][1]
         if  side == 'R':
             headsignal += 11
-            
-        """ CHANGE THIS AROUND TO BE MORE DYNAMIC """
-            
-            gap = 175
+            gap = ('shortlow')
         else:
-            gap = 815
+            gap = ('longhigh', 'shortlow')
         
 
         # Wall-o-matic 100 models end with the letter code. A and B (same plate
@@ -50,7 +47,7 @@ def encode(pos, type):
         headsignal = letterorder.index(letter) + 1
         
         # Letter and number codes are seperated by a low signal of ~120ms
-        gap = 175
+        gap = ('shortlow')
         
         # Wall-o-matic 160 models fire pulses equal to the second number
         tailsignal = int(number)
@@ -76,31 +73,33 @@ def send_gpio_signal(signalset):
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(4, GPIO.OUT, initial=relay_low)
     
-    now = time()
-    
-    # Cycle letter stepper
+    # Head waveform
     for headpeak in range(signalset[0]):
         GPIO.output(4, relay_high)
         sleep(pulse['high'] - pulse['correction'])
         GPIO.output(4, relay_low)
         sleep(pulse['low'] - pulse['correction'])
     
-    if signalset[2] == 815:
-        # Keep the long high wait
-        GPIO.output(4, relay_high)
-        sleep(pulse['long_wait'] - pulse['correction'])
-        
-        # The short wait (below) is shortened by 1 low pulse to compensate for
-        # any extension caused by the last low of the loop above. We therefore
-        # also imitate that here.
-        GPIO.output(4, relay_low)
-        sleep(pulse['low'] - pulse['correction'])
     
-    # Short wait on a low signal, for switch between letter and number steppers
-    # With compensation for any extension cause by the last low of the loops.
-    sleep(pulse['short_wait'] - pulse['low'] - pulse['correction'])
+    # Gap waveform
+    for gaptype in signalset[2]:
     
-    # Cycle number stepper
+        if gaptype == 'longhigh':
+            GPIO.output(4, relay_high)
+            sleep(pulse['long_wait'] - pulse['correction'])
+            # The short wait (below) is shortened by 1 low pulse to compensate for
+            # any extension caused by the last low of the loop above. We therefore
+            # also imitate that here.
+            GPIO.output(4, relay_low)
+            sleep(pulse['low'] - pulse['correction'])
+            
+        if gaptype == 'shortlow':
+            # Short wait on a low signal
+            # With compensation for any extension cause by the last low of the loops.
+            sleep(pulse['short_wait'] - pulse['low'] - pulse['correction'])
+    
+    
+    # Tail waveform
     for tailpeak in range(signalset[1]):
         GPIO.output(4, relay_high)
         sleep(pulse['high'] - pulse['correction'])
