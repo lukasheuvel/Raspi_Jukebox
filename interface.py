@@ -45,7 +45,16 @@ def encode(pos, type):
         letterorder = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
                        "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V"]
         
-    
+        # Wall-o-matic 160 models fire n pulses for the nth letter in the order
+        # +1 to compensate for index 1 being 0 in python.
+        headsignal = letterorder.index(letter) + 1
+        
+        # Letter and number codes are seperated by a low signal of ~120ms
+        gap = 175
+        
+        # Wall-o-matic 160 models fire pulses equal to the second number
+        tailsignal = int(number)
+        
     return (headsignal, tailsignal, gap)
     
 def print_signal(signalset):
