@@ -69,37 +69,42 @@ def send_gpio_signal(signalset):
     with open("pulsesettings.json",'r') as f:
         pulse = json.load(f)
     
+    
+    
+    # Set up GPIO pins
     if GPIO.getmode() == None:
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(4, GPIO.OUT, initial=relay_low)
     
-    # Head waveform
+    
+    # Head waveform (ends on high for easy gap handling)
     for headpeak in range(signalset[0]):
-        GPIO.output(4, relay_high)
-        sleep(pulse['high'] - pulse['correction'])
         GPIO.output(4, relay_low)
         sleep(pulse['low'] - pulse['correction'])
+        GPIO.output(4, relay_high)
+        sleep(pulse['high'] - pulse['correction'])
     
     
     # Gap waveform
     for gaptype in signalset[2]:
     
         if gaptype == 'longhigh':
-            GPIO.output(4, relay_high)
-            sleep(pulse['long_wait'] - pulse['correction'])
-            # The short wait (below) is shortened by 1 low pulse to compensate for
-            # any extension caused by the last low of the loop above. We therefore
-            # also imitate that here.
+            # Quick low before the gap
             GPIO.output(4, relay_low)
             sleep(pulse['low'] - pulse['correction'])
+            # Long high gap
+            GPIO.output(4, relay_high)
+            sleep(pulse['long_wait'] - pulse['correction'])
+
+            # IMPORTANT: This does not go back to low, as it is generally
+            # followed by a shortlow. 
             
         if gaptype == 'shortlow':
             # Short wait on a low signal
-            # With compensation for any extension cause by the last low of the loops.
-            sleep(pulse['short_wait'] - pulse['low'] - pulse['correction'])
+            sleep(pulse['short_wait'] - pulse['correction'])
     
     
-    # Tail waveform
+    # Tail waveform (starts on high for easy gap handling)
     for tailpeak in range(signalset[1]):
         GPIO.output(4, relay_high)
         sleep(pulse['high'] - pulse['correction'])
