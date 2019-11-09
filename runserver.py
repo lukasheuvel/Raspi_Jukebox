@@ -51,7 +51,7 @@ def main():
     
             selected_nr = selected.split(' - ')[0]
     
-            signal = interface.encode(selected_nr)
+            signal = interface.encode(selected_nr, 'wallomatic160')
     
             interface.send_gpio_signal(signal)
     
