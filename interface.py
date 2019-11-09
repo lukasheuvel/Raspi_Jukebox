@@ -2,40 +2,49 @@ import json
 from time import sleep, time
 import RPi.GPIO as GPIO
 
-def encode(pos):
-    lettercode = {'A':(1,'-'),
-                 'B':(1,'+'),
-                 'C':(2,'-'),
-                 'D':(2,'+'),
-                 'E':(3,'-'),
-                 'F':(3,'+'),
-                 'G':(4,'-'),
-                 'H':(4,'+'),
-                 'J':(5,'-'),
-                 'K':(5,'+'),
-                 'L':(6,'-'),
-                 'M':(6,'+'),
-                 'N':(7,'-'),
-                 'P':(7,'+'),
-                 'Q':(8,'-'),
-                 'R':(8,'+'),
-                 'S':(1,'-'),
-                 'T':(1,'+'),
-                 'U':(1,'-'),
-                 'V':(1,'+')}
+def encode(pos, type):
 
     letter = pos[0]
     number = pos[1:]
     
-    headsignal = int(number)
-    tailsignal = lettercode[letter][0]
+    if type = 'wallomatic100':
+        lettercode = {'A':(1,'L'),
+                     'B':(1,'R'),
+                     'C':(2,'L'),
+                     'D':(2,'R'),
+                     'E':(3,'L'),
+                     'F':(3,'R'),
+                     'G':(4,'L'),
+                     'H':(4,'R'),
+                     'J':(5,'L'),
+                     'K':(5,'R'),}
+
+        # Wall-o-matic 100 models start with pulses for the number, with one
+        # pulse per number. Here we refer to it as the headsignal.
+        headsignal = int(number)
+        
+        # If the plate is on the left (A) side, there's a long (815ms) high.
+        # If the plate is on the right (B) side, the head signal is extended
+        # by 11 pulses.
+        side = lettercode[letter][1]
+        if  side == 'R':
+            headsignal += 11
+            
+        """ CHANGE THIS AROUND TO BE MORE DYNAMIC """
+            
+            gap = 175
+        else:
+            gap = 815
+        
+
+        # Wall-o-matic 100 models end with the letter code. A and B (same plate
+        # ) share the same number here, but with a different gap signal.
+        tailsignal = lettercode[letter][0]
     
-    side = lettercode[letter][1]
-    if  side == '+':
-        headsignal += 11
-        gap = 175
-    else:
-        gap = 815
+    if type = 'wallomatic160':
+        letterorder = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K",
+                       "L", "M", "N", "P", "Q", "R", "S", "T", "U", "V"]
+        
     
     return (headsignal, tailsignal, gap)
     
