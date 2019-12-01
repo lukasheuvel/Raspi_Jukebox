@@ -1,123 +1,80 @@
-<div style="float: left">
-    <table cellspacing="0" rules="all" border="0" style="width:480px;border-collapse:collapse;">
-        <tbody>
-            <tr>
-                <th style="width:480px; text-align: center;" scope="col">60s</th>
-            </tr>
-        </tbody>
-    </table>
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://www.riskfeed.nl/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Seeburg | van den Heuvel</title>
+
+    <link rel="shortcut icon" href={{url_for('static', filename='favicon.ico')}} type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href={{url_for('static', filename='main.css')}}>
+</head>
+
+<!--body-->
+    {% for ColNr in ColCount %}
+        <div style="float: left">
+            <table cellspacing="0" rules="all" border="0" style="width:480px;border-collapse:collapse;">
+                <tbody>
+                    <tr>
+                        <th style="width:480px; text-align: center;" scope="col">{{ ColName[ColNr] }}</th>
+                    </tr>
+                </tbody>
+            </table>
             
-    <table cellspacing="0" rules="all" border="0" style="width:480px;border-collapse:collapse;">
-        <tbody>
-            <tr>
-                <th style="width:480px; scope="col">
-                    <svg width="480" height="80">
-                        <!-- TOP LEFT SECTION -->
-                        <a href = "A1.txt">
-                            <rect x="0" y="0" width="240" height="40" style="fill:white;stroke:red;stroke-width:6" />
-                            <text x="7" y="20" style="fill:blue" font-size="18" font-weight="bolder">A1</text>
-                            <text x="25%" y="16" dominant-baseline="middle" text-anchor="middle">Stairway to Heaven</text>
-                        </a>
+            {% for RowNr in RowCount %}
+                <table cellspacing="0" rules="all" border="0" style="width:480px;border-collapse:collapse;">
+                    <tbody>
+                        <tr>
+                            <th style="width:480px; scope="col">
+                                <svg width="480" height="80">
+                                    <!-- TOP LEFT SECTION -->
+                                    <a href = "A1.txt">
+                                        <rect x="0" y="0" width="240" height="40" style="fill:{{ Colour[ColNr][1] }};stroke:{{ Colour[ColNr][0] }};stroke-width:6" />
+                                        <text x="7" y="20" style="fill:blue" font-size="16" font-weight="bolder">{{ Datastore[ColNr][RowNr]['left']['A']['position'] }}</text>
+                                        <text x="25%" y="16" dominant-baseline="middle" text-anchor="middle">{{ Datastore[ColNr][RowNr]['left']['A']['track'] }}</text>
+                                    </a>
 
-                        <!-- BOTTOM LEFT SECTION-->
-                        <a href = "B1.txt">
-                            <rect x="0" y="40" width="240" height="40" style="fill:white;stroke:red;stroke-width:6" />
-                            <text x="7" y="72" style="fill:blue" font-size="18" font-weight="bolder">B1</text>
-                            <text x="25%" y="68" dominant-baseline="middle" text-anchor="middle">Whole Lotta Love</text>
-                        </a>
-                        
-                        <!-- TOP RIGHT SECTION -->
-                        <a href = "L1.txt">
-                            <rect x="240" y="0" width="240" height="40" style="fill:white;stroke:red;stroke-width:6" />
-                            <text x="474" y="20" style="fill:blue" font-size="18" font-weight="bolder" text-anchor="end">L1</text>
-                            <text x="75%" y="16" dominant-baseline="middle" text-anchor="middle">Take Five</text>
-                        </a>
+                                    <!-- BOTTOM LEFT SECTION-->
+                                    <a href = "B1.txt">
+                                        <rect x="0" y="40" width="240" height="40" style="fill:{{ Colour[ColNr][1] }};stroke:{{ Colour[ColNr][0] }};stroke-width:6" />
+                                        <text x="7" y="74" style="fill:blue" font-size="16" font-weight="bolder">{{ Datastore[ColNr][RowNr]['left']['B']['position'] }}</text>
+                                        <text x="25%" y="68" dominant-baseline="middle" text-anchor="middle">{{ Datastore[ColNr][RowNr]['left']['B']['track'] }}</text>
+                                    </a>
+                                    
+                                    <!-- TOP RIGHT SECTION -->
+                                    <a href = "L1.txt">
+                                        <rect x="240" y="0" width="240" height="40" style="fill:{{ Colour[ColNr][1] }};stroke:{{ Colour[ColNr][0] }};stroke-width:6" />
+                                        <text x="474" y="20" style="fill:blue" font-size="16" font-weight="bolder" text-anchor="end">{{ Datastore[ColNr][RowNr]['right']['A']['position'] }}</text>
+                                        <text x="75%" y="16" dominant-baseline="middle" text-anchor="middle">{{ Datastore[ColNr][RowNr]['right']['A']['track'] }}</text>
+                                    </a>
 
-                        <!-- BOTTOM SECTION-->
-                        <a href = "M1.txt">
-                            <rect x="240" y="40" width="240" height="40" style="fill:white;stroke:red;stroke-width:6" />
-                            <text x="474" y="72" style="fill:blue" font-size="18" font-weight="bolder" text-anchor="end">M1</text>
-                            <text x="75%" y="68" dominant-baseline="middle" text-anchor="middle">Blue Rondo a la Turk</text>
-                        </a>
-                        
-                        <!-- CENTER SHAPES -->
-                        <rect x="0" y="33" width="480" height="14" style="fill:red" />
-                        <!-- left artist -->
-                        <rect x="26" y="26" width="188" height="28" style="fill:white;stroke:red;stroke-width:3" />
-                        <polygon points="27,26 41,40 27,54" style="fill:red" />
-                        <polygon points="213,26 199,40 213,54" style="fill:red" />
-                        <text x="25%" y="42" dominant-baseline="middle" text-anchor="middle" font-size="14">* LED ZEPPELIN *</text>
-                        <!-- right artist -->
-                        <rect x="266" y="26" width="188" height="28" style="fill:white;stroke:red;stroke-width:3" />
-                        <polygon points="267,26 281,40 267,54" style="fill:red" />
-                        <polygon points="453,26 439,40 453,54" style="fill:red" />
-                        <text x="75%" y="42" dominant-baseline="middle" text-anchor="middle" font-size="14">* THE DAVE BRUEBECK QUARTET *</text>
-                        
-                    </svg>
-                </th>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<div style="float: left">
-    <table cellspacing="0" rules="all" border="0" style="width:480px;border-collapse:collapse;">
-        <tbody>
-            <tr>
-                <th style="width:480px; text-align: center;" scope="col">70s</th>
-            </tr>
-        </tbody>
-    </table>
-            
-    <table cellspacing="0" rules="all" border="0" style="width:480px;border-collapse:collapse;">
-        <tbody>
-            <tr>
-                <th style="width:480px; scope="col">
-                    <svg width="480" height="80">
-                        <!-- TOP LEFT SECTION -->
-                        <a href = "A1.txt">
-                            <rect x="0" y="0" width="240" height="40" style="fill:white;stroke:red;stroke-width:6" />
-                            <text x="7" y="20" style="fill:blue" font-size="18" font-weight="bolder">A1</text>
-                            <text x="25%" y="16" dominant-baseline="middle" text-anchor="middle">Stairway to Heaven</text>
-                        </a>
-
-                        <!-- BOTTOM LEFT SECTION-->
-                        <a href = "B1.txt">
-                            <rect x="0" y="40" width="240" height="40" style="fill:white;stroke:red;stroke-width:6" />
-                            <text x="7" y="72" style="fill:blue" font-size="18" font-weight="bolder">B1</text>
-                            <text x="25%" y="68" dominant-baseline="middle" text-anchor="middle">Whole Lotta Love</text>
-                        </a>
-                        
-                        <!-- TOP RIGHT SECTION -->
-                        <a href = "L1.txt">
-                            <rect x="240" y="0" width="240" height="40" style="fill:white;stroke:red;stroke-width:6" />
-                            <text x="474" y="20" style="fill:blue" font-size="18" font-weight="bolder" text-anchor="end">L1</text>
-                            <text x="75%" y="16" dominant-baseline="middle" text-anchor="middle">Take Five</text>
-                        </a>
-
-                        <!-- BOTTOM SECTION-->
-                        <a href = "M1.txt">
-                            <rect x="240" y="40" width="240" height="40" style="fill:white;stroke:red;stroke-width:6" />
-                            <text x="474" y="72" style="fill:blue" font-size="18" font-weight="bolder" text-anchor="end">M1</text>
-                            <text x="75%" y="68" dominant-baseline="middle" text-anchor="middle">Blue Rondo a la Turk</text>
-                        </a>
-                        
-                        <!-- CENTER SHAPES -->
-                        <rect x="0" y="33" width="480" height="14" style="fill:red" />
-                        <!-- left artist -->
-                        <rect x="26" y="26" width="188" height="28" style="fill:white;stroke:red;stroke-width:3" />
-                        <polygon points="27,26 41,40 27,54" style="fill:red" />
-                        <polygon points="213,26 199,40 213,54" style="fill:red" />
-                        <text x="25%" y="42" dominant-baseline="middle" text-anchor="middle" font-size="14">* LED ZEPPELIN *</text>
-                        <!-- right artist -->
-                        <rect x="266" y="26" width="188" height="28" style="fill:white;stroke:red;stroke-width:3" />
-                        <polygon points="267,26 281,40 267,54" style="fill:red" />
-                        <polygon points="453,26 439,40 453,54" style="fill:red" />
-                        <text x="75%" y="42" dominant-baseline="middle" text-anchor="middle" font-size="14">* THE DAVE BRUEBECK QUARTET *</text>
-                        
-                    </svg>
-                </th>
-            </tr>
-        </tbody>
-    </table>
-</div>
+                                    <!-- BOTTOM SECTION-->
+                                    <a href = "M1.txt">
+                                        <rect x="240" y="40" width="240" height="40" style="fill:{{ Colour[ColNr][1] }};stroke:{{ Colour[ColNr][0] }};stroke-width:6" />
+                                        <text x="474" y="74" style="fill:blue" font-size="16" font-weight="bolder" text-anchor="end">{{ Datastore[ColNr][RowNr]['right']['B']['position'] }}</text>
+                                        <text x="75%" y="68" dominant-baseline="middle" text-anchor="middle">{{ Datastore[ColNr][RowNr]['right']['B']['track'] }}</text>
+                                    </a>
+                                    
+                                    <!-- CENTER SHAPES -->
+                                    <rect x="0" y="33" width="480" height="14" style="fill:{{ Colour[ColNr][0] }}" />
+                                    <!-- left artist -->
+                                    <rect x="26" y="26" width="188" height="28" style="fill:{{ Colour[ColNr][1] }};stroke:{{ Colour[ColNr][0] }};stroke-width:3" />
+                                    <polygon points="27,26 41,40 27,54" style="fill:{{ Colour[ColNr][0] }}" />
+                                    <polygon points="213,26 199,40 213,54" style="fill:{{ Colour[ColNr][0] }}" />
+                                    <text x="25%" y="42" dominant-baseline="middle" text-anchor="middle" font-size="12">* {{ Datastore[ColNr][RowNr]['left']['artist'].upper() }} *</text>
+                                    <!-- right artist -->
+                                    <rect x="266" y="26" width="188" height="28" style="fill:{{ Colour[ColNr][1] }};stroke:{{ Colour[ColNr][0] }};stroke-width:3" />
+                                    <polygon points="267,26 281,40 267,54" style="fill:{{ Colour[ColNr][0] }}" />
+                                    <polygon points="453,26 439,40 453,54" style="fill:{{ Colour[ColNr][0] }}" />
+                                    <text x="75%" y="42" dominant-baseline="middle" text-anchor="middle" font-size="12">* {{ Datastore[ColNr][RowNr]['right']['artist'].upper() }} *</text>
+                                    
+                                </svg>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            {% endfor %}
+        </div>
+    {% endfor %}
+<!--/body-->

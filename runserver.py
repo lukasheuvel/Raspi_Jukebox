@@ -20,6 +20,7 @@ __status__ = "Prototype"
 
 # Imports
 from datetime import datetime
+import json
 
 from flask import Flask, request, render_template
 
@@ -30,13 +31,22 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET','POST'])
 def main():
+    select_row = ['0', '1', '2', '3', '4', '5', '6', '7']
+    select_col = ['0', '1', '2', '3', '4']
+    colnames = {'0': "All Time Favorites",
+                '1': "50s",
+                '2': "60s",
+                '3': "70s",
+                '4': "80s"}
+    colours = {'0': ('orange','peachpuff'),
+              '1': ('royalblue','skyblue'),
+              '2': ('mediumseagreen','lightgreen'),
+              '3': ('firebrick','white'),
+              '4': ('mediumorchid','plum')}
     
-    inputs = []
-    with open('seeburg.txt') as f:
-        for line in f:
-            line = line.strip().replace('\t',' - ')
-            inputs.append(line)
-            
+    with open('seeburg.json', 'r') as f:
+        selection_datastore = json.load(f)
+
     if request.method == 'POST':
         with open('queuelog.txt', 'r+') as f:
             now = datetime.now()
@@ -54,16 +64,12 @@ def main():
             signal = interface.encode(selected_nr, 'wallomatic160')
     
             interface.send_gpio_signal(signal)
-    
-    with open('queuelog.txt','r') as f:
-        queuelog = []
-        for entry in f:
-            entry = entry.strip().split('\t')
-            entry[-1] = str(entry[-1])[0:-4]
-            queuelog.append(entry)
-    
-    return render_template('main.html', InputList = inputs, QueueLog = queuelog)
+            
+    return render_template('main.html', Datastore = selection_datastore,
+                           RowCount = select_row, ColCount = select_col,
+                           ColName = colnames, Colour = colours)
 
     
 if __name__ == "__main__":
+    # Run file manager on the excel file?
     app.run(host = '0.0.0.0', port = 5000)

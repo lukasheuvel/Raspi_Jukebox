@@ -39,15 +39,16 @@ def seeburg_to_json():
     number_till = 8
     
     datastore = {}
-    for number in range(number_till):
-        number += 1
-        
+    for i, letter in enumerate(labelorder):
+    
         dataset_row = {}
-        for i, letter in enumerate(labelorder):
+        for number in range(number_till):
+            number += 1
+
             svg_set = get_set(letter, str(number), df1)
-            dataset_row[i] = svg_set
+            dataset_row[number-1] = svg_set
             
-        datastore[number-1] = dataset_row
+        datastore[i] = dataset_row
             
     json.dump(datastore, open(json_outfile, 'w'), indent=4, sort_keys=True)
             
