@@ -51,7 +51,8 @@ def main():
         
         signal = interface.encode(selected, 'wallomatic160')
 
-        interface.send_gpio_signal(signal)
+        # interface.send_gpio_signal(signal)
+        print(selected)
             
     return render_template('main.html', Datastore = selection_datastore,
                            RowCount = select_row, ColCount = select_col,

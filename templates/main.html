@@ -23,10 +23,10 @@
             </table>
             
             {% for RowNr in RowCount %}
-                <table cellspacing="0" rules="all" border="0" style="width:480px;border-collapse:collapse;">
+                <!--<table cellspacing="0" rules="all" border="0" style="width:480px;border-collapse:collapse;">
                     <tbody>
                         <tr>
-                            <th style="width:480px; scope="col">
+                            <th style="width:480px; scope="col">-->
                                 <svg width="480" height="80">
                                     <!-- TOP LEFT SECTION -->
                                     <rect x="0" y="0" width="240" height="40" style="fill:{{ Colour[ColNr][1] }};stroke:{{ Colour[ColNr][0] }};stroke-width:6" />
@@ -95,10 +95,11 @@
                                     </foreignObject>
                                     
                                 </svg>
-                            </th>
+                                <br/>
+                            <!--</th>
                         </tr>
                     </tbody>
-                </table>
+                </table>-->
             {% endfor %}
         </div>
     {% endfor %}
