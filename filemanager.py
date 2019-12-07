@@ -6,13 +6,15 @@ import pandas as pd
 def seeburg_to_json():
     # Set general variables
     excel_infile = 'JB-tracking 30nov2019.xlsx'
-    excel_sheet = 'SinglesDB'
+    singles_sheet = 'SinglesDB'
+    layout_sheet = 'Layout'
     json_outfile = 'seeburg.json'
 
 
     # Load in the dataframe
     xls = pd.ExcelFile(excel_infile)
-    df1 = pd.read_excel(xls, excel_sheet)
+    df1 = pd.read_excel(xls, singles_sheet)
+    df2 = pd.read_excel(xls, layout_sheet)
     
     # Filter out entries that are not inside the jukebox
     df1 = df1[df1.JB_New.notnull()]
@@ -33,26 +35,31 @@ def seeburg_to_json():
     df1.reset_index(drop=True, inplace=True)
     df1.set_index('JB_New', inplace=True)
     
+    # MAKE JSON USING DF2
     
-    # Set variables for creating json
-    labelorder = ['A', 'C', 'E', 'G', 'J']
-    number_till = 8
+    df2.set_index('index', inplace=True)
+    rows, cols = df2.shape
     
     datastore = {}
-    for i, letter in enumerate(labelorder):
+    for colnr in range(1,int(cols/2)+1):
     
-        dataset_row = {}
-        for number in range(number_till):
-            number += 1
-
-            svg_set = get_set(letter, str(number), df1)
-            dataset_row[number-1] = svg_set
+        datastore_column = {}
+        for rownr in range(1,int(rows/2)+1):
+        
+            pos_tl = df2.loc[rownr, colnr]
+            pos_bl = df2.loc[f'{rownr}b', colnr]
+            pos_tr = df2.loc[rownr, f'{colnr}b']
+            pos_br = df2.loc[f'{rownr}b', f'{colnr}b']
             
-        datastore[i] = dataset_row
+            svg_set = get_set(pos_tl, pos_bl, pos_tr, pos_br, df1)
             
+            datastore_column[rownr] = svg_set
+            
+        datastore[colnr] = datastore_column
+    
     json.dump(datastore, open(json_outfile, 'w'), indent=4, sort_keys=True)
-            
-            
+    
+
 def swap(x):
     if x['B-side single'] == 1:
         return [x[1], x[0], x[2], x[3], 0, x[5]]
@@ -60,11 +67,11 @@ def swap(x):
         return [x[0], x[1], x[2], x[3], 0, x[5]]
 
 
-def get_set(l, n, df):
+def get_set(pos_tl, pos_bl, pos_tr, pos_br, df):
     datastore = {'left': {'A': {}, 'B': {}}, 'right': {'A': {}, 'B': {}}}
     
     for labelside in datastore.keys():
-        pos = other_side(l + n, 'label') if labelside == 'right' else l + n
+        pos = pos_tr if labelside == 'right' else pos_tl
         row = df.loc[pos]
         
         datastore[labelside]['artist'] = row[3]
@@ -75,21 +82,11 @@ def get_set(l, n, df):
                 datastore[labelside][plateside]['position'] = pos
                 datastore[labelside][plateside]['track'] = row[0]
             elif plateside == 'B':
-                pos = other_side(pos, 'plate')
+                pos = pos_br if labelside == 'right' else pos_bl
                 datastore[labelside][plateside]['position'] = pos
                 datastore[labelside][plateside]['track'] = row[1]
+                
     return datastore
-    
-def other_side(pos, type):
-    if type == 'plate':
-        side_dict = {'A':'B', 'C':'D', 'E':'F', 'G':'H', 'J':'K', 'L':'M', 'N':'P',
-                  'Q':'R', 'S':'T', 'U':'V', 'B':'A', 'D':'C', 'F':'E', 'H':'G',
-                  'K':'J', 'M':'L', 'P':'N', 'R':'Q', 'T':'S', 'V':'U'}
-    elif type == 'label':
-        side_dict = {'A':'L', 'B':'M', 'C':'N', 'D':'P', 'E':'Q', 'F':'R',
-                      'G':'S', 'H':'T', 'J':'U', 'K':'V'}
-    pos = side_dict[pos[0]] + pos[1]
-    return pos
 
 if __name__ == '__main__':
     seeburg_to_json()

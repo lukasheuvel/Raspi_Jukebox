@@ -1,6 +1,6 @@
 {
-    "0": {
-        "0": {
+    "1": {
+        "1": {
             "left": {
                 "A": {
                     "position": "A1",
@@ -26,6 +26,190 @@
                 "year": 1959
             }
         },
+        "2": {
+            "left": {
+                "A": {
+                    "position": "C1",
+                    "track": "Let's Twist Again"
+                },
+                "B": {
+                    "position": "D1",
+                    "track": "Everything's Gonna' Be "
+                },
+                "artist": "Chubby Checker",
+                "year": 1961
+            },
+            "right": {
+                "A": {
+                    "position": "N1",
+                    "track": "Good Vibrations"
+                },
+                "B": {
+                    "position": "P1",
+                    "track": "Let's go for a while"
+                },
+                "artist": "Beach Boys",
+                "year": 1966
+            }
+        },
+        "3": {
+            "left": {
+                "A": {
+                    "position": "E1",
+                    "track": "Tequila"
+                },
+                "B": {
+                    "position": "F1",
+                    "track": "Limbo Rock"
+                },
+                "artist": "Champs",
+                "year": 1964
+            },
+            "right": {
+                "A": {
+                    "position": "Q1",
+                    "track": "Paint it Black"
+                },
+                "B": {
+                    "position": "R1",
+                    "track": "Long Long While"
+                },
+                "artist": "Rolling Stones",
+                "year": 1966
+            }
+        },
+        "4": {
+            "left": {
+                "A": {
+                    "position": "G1",
+                    "track": "House of the Rising Sun"
+                },
+                "B": {
+                    "position": "H1",
+                    "track": "Don't let me be misunderstood"
+                },
+                "artist": "Animals",
+                "year": 1964
+            },
+            "right": {
+                "A": {
+                    "position": "S1",
+                    "track": "A Whiter Shade of Pale"
+                },
+                "B": {
+                    "position": "T1",
+                    "track": "Lime Street Blues"
+                },
+                "artist": "Procol Harum",
+                "year": 1967
+            }
+        },
+        "5": {
+            "left": {
+                "A": {
+                    "position": "J1",
+                    "track": "(I Can't Get No) Satisfaction"
+                },
+                "B": {
+                    "position": "K1",
+                    "track": "The under assistant"
+                },
+                "artist": "Rolling Stones",
+                "year": 1965
+            },
+            "right": {
+                "A": {
+                    "position": "U1",
+                    "track": "Light my Fire"
+                },
+                "B": {
+                    "position": "V1",
+                    "track": "The Chrystal Ship"
+                },
+                "artist": "Doors",
+                "year": 1967
+            }
+        },
+        "6": {
+            "left": {
+                "A": {
+                    "position": "A6",
+                    "track": "Let's Stick Together"
+                },
+                "B": {
+                    "position": "B6",
+                    "track": "Sea Breezes"
+                },
+                "artist": "Bryan Ferry",
+                "year": 1976
+            },
+            "right": {
+                "A": {
+                    "position": "G6",
+                    "track": "Year of the Cat"
+                },
+                "B": {
+                    "position": "H6",
+                    "track": "Broadway Hotel"
+                },
+                "artist": "Al Stewart",
+                "year": 1977
+            }
+        },
+        "7": {
+            "left": {
+                "A": {
+                    "position": "C6",
+                    "track": "Hotel California"
+                },
+                "B": {
+                    "position": "D6",
+                    "track": "Pretty Maids in a Row"
+                },
+                "artist": "Eagles",
+                "year": 1977
+            },
+            "right": {
+                "A": {
+                    "position": "J6",
+                    "track": "Peter Gunn"
+                },
+                "B": {
+                    "position": "K6",
+                    "track": "Knife Edge"
+                },
+                "artist": "Emerson, Lake & Palmer",
+                "year": 1977
+            }
+        },
+        "8": {
+            "left": {
+                "A": {
+                    "position": "E6",
+                    "track": "Paradise by the Dashboard Light"
+                },
+                "B": {
+                    "position": "F6",
+                    "track": "\u201cBat\u201d Overture"
+                },
+                "artist": "Meat Loaf",
+                "year": 1977
+            },
+            "right": {
+                "A": {
+                    "position": "L6",
+                    "track": "She's Not There"
+                },
+                "B": {
+                    "position": "M6",
+                    "track": "Zulu"
+                },
+                "artist": "Santana",
+                "year": 1977
+            }
+        }
+    },
+    "2": {
         "1": {
             "left": {
                 "A": {
@@ -55,190 +239,6 @@
         "2": {
             "left": {
                 "A": {
-                    "position": "A3",
-                    "track": "Proud Mary"
-                },
-                "B": {
-                    "position": "B3",
-                    "track": "Born on the Bayou"
-                },
-                "artist": "Creedence Clearwater Revival",
-                "year": 1969
-            },
-            "right": {
-                "A": {
-                    "position": "L3",
-                    "track": "In-A-Gadda-Da-Vida"
-                },
-                "B": {
-                    "position": "M3",
-                    "track": "Easy Rider"
-                },
-                "artist": "Iron Butterfly",
-                "year": 1970
-            }
-        },
-        "3": {
-            "left": {
-                "A": {
-                    "position": "A4",
-                    "track": "Ain't no sunshine"
-                },
-                "B": {
-                    "position": "B4",
-                    "track": "Harlem"
-                },
-                "artist": "Bill Withers",
-                "year": 1971
-            },
-            "right": {
-                "A": {
-                    "position": "L4",
-                    "track": "Superstition"
-                },
-                "B": {
-                    "position": "M4",
-                    "track": "You've Got It Bad Girl"
-                },
-                "artist": "Stevie Wonder",
-                "year": 1972
-            }
-        },
-        "4": {
-            "left": {
-                "A": {
-                    "position": "A5",
-                    "track": "Smoke on the Water"
-                },
-                "B": {
-                    "position": "B5",
-                    "track": "Smoke on the Water (live)"
-                },
-                "artist": "Deep Purple",
-                "year": 1973
-            },
-            "right": {
-                "A": {
-                    "position": "L5",
-                    "track": "One of these nights"
-                },
-                "B": {
-                    "position": "M5",
-                    "track": "Visions"
-                },
-                "artist": "Eagles",
-                "year": 1975
-            }
-        },
-        "5": {
-            "left": {
-                "A": {
-                    "position": "A6",
-                    "track": "Let's Stick Together"
-                },
-                "B": {
-                    "position": "B6",
-                    "track": "Sea Breezes"
-                },
-                "artist": "Bryan Ferry",
-                "year": 1976
-            },
-            "right": {
-                "A": {
-                    "position": "L6",
-                    "track": "She's Not There"
-                },
-                "B": {
-                    "position": "M6",
-                    "track": "Zulu"
-                },
-                "artist": "Santana",
-                "year": 1977
-            }
-        },
-        "6": {
-            "left": {
-                "A": {
-                    "position": "A7",
-                    "track": "Street Life"
-                },
-                "B": {
-                    "position": "B7",
-                    "track": "The Hustler"
-                },
-                "artist": "Crusaders",
-                "year": 1979
-            },
-            "right": {
-                "A": {
-                    "position": "L7",
-                    "track": "Old Time Rock and Roll"
-                },
-                "B": {
-                    "position": "M7",
-                    "track": "Roll me Away"
-                },
-                "artist": "Bob Seger",
-                "year": 1983
-            }
-        },
-        "7": {
-            "left": {
-                "A": {
-                    "position": "A8",
-                    "track": "The Reflex"
-                },
-                "B": {
-                    "position": "B8",
-                    "track": "Make me smile"
-                },
-                "artist": "Duran Duran",
-                "year": 1984
-            },
-            "right": {
-                "A": {
-                    "position": "L8",
-                    "track": "Fragile"
-                },
-                "B": {
-                    "position": "M8",
-                    "track": "Fragile (Portuegese)"
-                },
-                "artist": "Sting",
-                "year": 1988
-            }
-        }
-    },
-    "1": {
-        "0": {
-            "left": {
-                "A": {
-                    "position": "C1",
-                    "track": "Let's Twist Again"
-                },
-                "B": {
-                    "position": "D1",
-                    "track": "Everything's Gonna' Be "
-                },
-                "artist": "Chubby Checker",
-                "year": 1961
-            },
-            "right": {
-                "A": {
-                    "position": "N1",
-                    "track": "Good Vibrations"
-                },
-                "B": {
-                    "position": "P1",
-                    "track": "Let's go for a while"
-                },
-                "artist": "Beach Boys",
-                "year": 1966
-            }
-        },
-        "1": {
-            "left": {
-                "A": {
                     "position": "C2",
                     "track": "Strawberry Fields Forever"
                 },
@@ -260,6 +260,190 @@
                 },
                 "artist": "Rolling Stones",
                 "year": 1968
+            }
+        },
+        "3": {
+            "left": {
+                "A": {
+                    "position": "E2",
+                    "track": "Fire"
+                },
+                "B": {
+                    "position": "F2",
+                    "track": "I put a Spell on You"
+                },
+                "artist": "Arthur Brown",
+                "year": 1968
+            },
+            "right": {
+                "A": {
+                    "position": "Q2",
+                    "track": "Hound Dog"
+                },
+                "B": {
+                    "position": "R2",
+                    "track": "Don't be Cruel"
+                },
+                "artist": "Elvis Presley",
+                "year": 1969
+            }
+        },
+        "4": {
+            "left": {
+                "A": {
+                    "position": "G2",
+                    "track": "Born to be wild"
+                },
+                "B": {
+                    "position": "H2",
+                    "track": "Magic Carpet Ride"
+                },
+                "artist": "Steppenwolf",
+                "year": 1968
+            },
+            "right": {
+                "A": {
+                    "position": "S2",
+                    "track": "The Long and Winding Road"
+                },
+                "B": {
+                    "position": "T2",
+                    "track": "For You Blue"
+                },
+                "artist": "Beatles",
+                "year": 1969
+            }
+        },
+        "5": {
+            "left": {
+                "A": {
+                    "position": "J2",
+                    "track": "Hey Jude"
+                },
+                "B": {
+                    "position": "K2",
+                    "track": "Revolution"
+                },
+                "artist": "Beatles",
+                "year": 1968
+            },
+            "right": {
+                "A": {
+                    "position": "U2",
+                    "track": "Space Oddity"
+                },
+                "B": {
+                    "position": "V2",
+                    "track": "Man who sold the World"
+                },
+                "artist": "David Bowie",
+                "year": 1969
+            }
+        },
+        "6": {
+            "left": {
+                "A": {
+                    "position": "N6",
+                    "track": "Sultans of Swing"
+                },
+                "B": {
+                    "position": "P6",
+                    "track": "Eastbound Train"
+                },
+                "artist": "Dire Straits",
+                "year": 1978
+            },
+            "right": {
+                "A": {
+                    "position": "U6",
+                    "track": "Voulez-Vous"
+                },
+                "B": {
+                    "position": "V6",
+                    "track": "Angel Eyes"
+                },
+                "artist": "ABBA",
+                "year": 1979
+            }
+        },
+        "7": {
+            "left": {
+                "A": {
+                    "position": "Q6",
+                    "track": "Baker Street"
+                },
+                "B": {
+                    "position": "R6",
+                    "track": "Big Change"
+                },
+                "artist": "Gerry Rafferty",
+                "year": 1978
+            },
+            "right": {
+                "A": {
+                    "position": "A7",
+                    "track": "Street Life"
+                },
+                "B": {
+                    "position": "B7",
+                    "track": "The Hustler"
+                },
+                "artist": "Crusaders",
+                "year": 1979
+            }
+        },
+        "8": {
+            "left": {
+                "A": {
+                    "position": "S6",
+                    "track": "Don't Bring me down"
+                },
+                "B": {
+                    "position": "T6",
+                    "track": "Dreaming of 4000"
+                },
+                "artist": "Electric Light Orchestra",
+                "year": 1979
+            },
+            "right": {
+                "A": {
+                    "position": "C7",
+                    "track": "Every Little Thing She Does"
+                },
+                "B": {
+                    "position": "D7",
+                    "track": "Shambelle"
+                },
+                "artist": "Police",
+                "year": 1981
+            }
+        }
+    },
+    "3": {
+        "1": {
+            "left": {
+                "A": {
+                    "position": "A3",
+                    "track": "Proud Mary"
+                },
+                "B": {
+                    "position": "B3",
+                    "track": "Born on the Bayou"
+                },
+                "artist": "Creedence Clearwater Revival",
+                "year": 1969
+            },
+            "right": {
+                "A": {
+                    "position": "L3",
+                    "track": "In-A-Gadda-Da-Vida"
+                },
+                "B": {
+                    "position": "M3",
+                    "track": "Easy Rider"
+                },
+                "artist": "Iron Butterfly",
+                "year": 1970
             }
         },
         "2": {
@@ -291,190 +475,6 @@
         "3": {
             "left": {
                 "A": {
-                    "position": "C4",
-                    "track": "School's Out"
-                },
-                "B": {
-                    "position": "D4",
-                    "track": "Eighteen"
-                },
-                "artist": "Alice Cooper",
-                "year": 1972
-            },
-            "right": {
-                "A": {
-                    "position": "N4",
-                    "track": "Listen To the Music"
-                },
-                "B": {
-                    "position": "P4",
-                    "track": "Toulouse Street"
-                },
-                "artist": "Doobie Brothers",
-                "year": 1972
-            }
-        },
-        "4": {
-            "left": {
-                "A": {
-                    "position": "C5",
-                    "track": "Desperado"
-                },
-                "B": {
-                    "position": "D5",
-                    "track": "Silver Threads"
-                },
-                "artist": "Linda Rondstadt",
-                "year": 1973
-            },
-            "right": {
-                "A": {
-                    "position": "N5",
-                    "track": "Bohemian Rhapsody"
-                },
-                "B": {
-                    "position": "P5",
-                    "track": "I'm in love with"
-                },
-                "artist": "Queen",
-                "year": 1975
-            }
-        },
-        "5": {
-            "left": {
-                "A": {
-                    "position": "C6",
-                    "track": "Hotel California"
-                },
-                "B": {
-                    "position": "D6",
-                    "track": "Pretty Maids in a Row"
-                },
-                "artist": "Eagles",
-                "year": 1977
-            },
-            "right": {
-                "A": {
-                    "position": "N6",
-                    "track": "Sultans of Swing"
-                },
-                "B": {
-                    "position": "P6",
-                    "track": "Eastbound Train"
-                },
-                "artist": "Dire Straits",
-                "year": 1978
-            }
-        },
-        "6": {
-            "left": {
-                "A": {
-                    "position": "C7",
-                    "track": "Every Little Thing She Does"
-                },
-                "B": {
-                    "position": "D7",
-                    "track": "Shambelle"
-                },
-                "artist": "Police",
-                "year": 1981
-            },
-            "right": {
-                "A": {
-                    "position": "N7",
-                    "track": "Another Brick in the Wall"
-                },
-                "B": {
-                    "position": "P7",
-                    "track": "One of my Turns"
-                },
-                "artist": "Pink Floyd",
-                "year": 1984
-            }
-        },
-        "7": {
-            "left": {
-                "A": {
-                    "position": "C8",
-                    "track": "Dancing In the Street"
-                },
-                "B": {
-                    "position": "D8",
-                    "track": "Dancing In The Street "
-                },
-                "artist": "David Bowie and Mick Jagger",
-                "year": 1985
-            },
-            "right": {
-                "A": {
-                    "position": "N8",
-                    "track": "Stay"
-                },
-                "B": {
-                    "position": "P8",
-                    "track": "Rosie"
-                },
-                "artist": "Jackson Browne",
-                "year": 1978
-            }
-        }
-    },
-    "2": {
-        "0": {
-            "left": {
-                "A": {
-                    "position": "E1",
-                    "track": "Tequila"
-                },
-                "B": {
-                    "position": "F1",
-                    "track": "Limbo Rock"
-                },
-                "artist": "Champs",
-                "year": 1964
-            },
-            "right": {
-                "A": {
-                    "position": "Q1",
-                    "track": "Paint it Black"
-                },
-                "B": {
-                    "position": "R1",
-                    "track": "Long Long While"
-                },
-                "artist": "Rolling Stones",
-                "year": 1966
-            }
-        },
-        "1": {
-            "left": {
-                "A": {
-                    "position": "E2",
-                    "track": "Fire"
-                },
-                "B": {
-                    "position": "F2",
-                    "track": "I put a Spell on You"
-                },
-                "artist": "Arthur Brown",
-                "year": 1968
-            },
-            "right": {
-                "A": {
-                    "position": "Q2",
-                    "track": "Hound Dog"
-                },
-                "B": {
-                    "position": "R2",
-                    "track": "Don't be Cruel"
-                },
-                "artist": "Elvis Presley",
-                "year": 1969
-            }
-        },
-        "2": {
-            "left": {
-                "A": {
                     "position": "E3",
                     "track": "5th Symphony"
                 },
@@ -496,6 +496,190 @@
                 },
                 "artist": "Ike & Tina Turner",
                 "year": 1971
+            }
+        },
+        "4": {
+            "left": {
+                "A": {
+                    "position": "G3",
+                    "track": "Bad Moon Rising"
+                },
+                "B": {
+                    "position": "H3",
+                    "track": "Lodi"
+                },
+                "artist": "Creedence Clearwater Revival",
+                "year": 1969
+            },
+            "right": {
+                "A": {
+                    "position": "S3",
+                    "track": "Riders on the Storm"
+                },
+                "B": {
+                    "position": "T3",
+                    "track": "Changeling"
+                },
+                "artist": "Doors",
+                "year": 1971
+            }
+        },
+        "5": {
+            "left": {
+                "A": {
+                    "position": "J3",
+                    "track": "Child in Time"
+                },
+                "B": {
+                    "position": "K3",
+                    "track": "Woman from Tokyo"
+                },
+                "artist": "Deep Purple",
+                "year": 1970
+            },
+            "right": {
+                "A": {
+                    "position": "U3",
+                    "track": "Imagine"
+                },
+                "B": {
+                    "position": "V3",
+                    "track": "Give Peace a chance"
+                },
+                "artist": "John Lennon",
+                "year": 1971
+            }
+        },
+        "6": {
+            "left": {
+                "A": {
+                    "position": "E7",
+                    "track": "Private Investigations"
+                },
+                "B": {
+                    "position": "F7",
+                    "track": "Badges Posters"
+                },
+                "artist": "Dire Straits",
+                "year": 1982
+            },
+            "right": {
+                "A": {
+                    "position": "L7",
+                    "track": "Old Time Rock and Roll"
+                },
+                "B": {
+                    "position": "M7",
+                    "track": "Roll me Away"
+                },
+                "artist": "Bob Seger",
+                "year": 1983
+            }
+        },
+        "7": {
+            "left": {
+                "A": {
+                    "position": "G7",
+                    "track": "Old and Wise"
+                },
+                "B": {
+                    "position": "H7",
+                    "track": "Children of the Moon"
+                },
+                "artist": "Alan Parsons Project",
+                "year": 1982
+            },
+            "right": {
+                "A": {
+                    "position": "N7",
+                    "track": "Another Brick in the Wall"
+                },
+                "B": {
+                    "position": "P7",
+                    "track": "One of my Turns"
+                },
+                "artist": "Pink Floyd",
+                "year": 1984
+            }
+        },
+        "8": {
+            "left": {
+                "A": {
+                    "position": "J7",
+                    "track": "Bad to the Bone"
+                },
+                "B": {
+                    "position": "K7",
+                    "track": "I Drink Alone"
+                },
+                "artist": "George Thorogood",
+                "year": 1982
+            },
+            "right": {
+                "A": {
+                    "position": "Q7",
+                    "track": "Gimme all your Lovin'"
+                },
+                "B": {
+                    "position": "R7",
+                    "track": "Trade Me"
+                },
+                "artist": "ZZ Top",
+                "year": 1984
+            }
+        }
+    },
+    "4": {
+        "1": {
+            "left": {
+                "A": {
+                    "position": "A4",
+                    "track": "Ain't no sunshine"
+                },
+                "B": {
+                    "position": "B4",
+                    "track": "Harlem"
+                },
+                "artist": "Bill Withers",
+                "year": 1971
+            },
+            "right": {
+                "A": {
+                    "position": "L4",
+                    "track": "Superstition"
+                },
+                "B": {
+                    "position": "M4",
+                    "track": "You've Got It Bad Girl"
+                },
+                "artist": "Stevie Wonder",
+                "year": 1972
+            }
+        },
+        "2": {
+            "left": {
+                "A": {
+                    "position": "C4",
+                    "track": "School's Out"
+                },
+                "B": {
+                    "position": "D4",
+                    "track": "Eighteen"
+                },
+                "artist": "Alice Cooper",
+                "year": 1972
+            },
+            "right": {
+                "A": {
+                    "position": "N4",
+                    "track": "Listen To the Music"
+                },
+                "B": {
+                    "position": "P4",
+                    "track": "Toulouse Street"
+                },
+                "artist": "Doobie Brothers",
+                "year": 1972
             }
         },
         "3": {
@@ -527,190 +711,6 @@
         "4": {
             "left": {
                 "A": {
-                    "position": "E5",
-                    "track": "The Jean Genie"
-                },
-                "B": {
-                    "position": "F5",
-                    "track": "Ziggy Stardust"
-                },
-                "artist": "David Bowie",
-                "year": 1973
-            },
-            "right": {
-                "A": {
-                    "position": "Q5",
-                    "track": "Dancing Queen"
-                },
-                "B": {
-                    "position": "R5",
-                    "track": "That's me"
-                },
-                "artist": "ABBA",
-                "year": 1976
-            }
-        },
-        "5": {
-            "left": {
-                "A": {
-                    "position": "E6",
-                    "track": "Paradise by the Dashboard Light"
-                },
-                "B": {
-                    "position": "F6",
-                    "track": "\u201cBat\u201d Overture"
-                },
-                "artist": "Meat Loaf",
-                "year": 1977
-            },
-            "right": {
-                "A": {
-                    "position": "Q6",
-                    "track": "Baker Street"
-                },
-                "B": {
-                    "position": "R6",
-                    "track": "Big Change"
-                },
-                "artist": "Gerry Rafferty",
-                "year": 1978
-            }
-        },
-        "6": {
-            "left": {
-                "A": {
-                    "position": "E7",
-                    "track": "Private Investigations"
-                },
-                "B": {
-                    "position": "F7",
-                    "track": "Badges Posters"
-                },
-                "artist": "Dire Straits",
-                "year": 1982
-            },
-            "right": {
-                "A": {
-                    "position": "Q7",
-                    "track": "Gimme all your Lovin'"
-                },
-                "B": {
-                    "position": "R7",
-                    "track": "Trade Me"
-                },
-                "artist": "ZZ Top",
-                "year": 1984
-            }
-        },
-        "7": {
-            "left": {
-                "A": {
-                    "position": "E8",
-                    "track": "You can Leave your Hat on"
-                },
-                "B": {
-                    "position": "F8",
-                    "track": "Shelter Me"
-                },
-                "artist": "Joe Cocker",
-                "year": 1987
-            },
-            "right": {
-                "A": {
-                    "position": "Q8",
-                    "track": "Black Velvet"
-                },
-                "B": {
-                    "position": "R8",
-                    "track": "If You want To"
-                },
-                "artist": "Alannah Myles",
-                "year": 1990
-            }
-        }
-    },
-    "3": {
-        "0": {
-            "left": {
-                "A": {
-                    "position": "G1",
-                    "track": "House of the Rising Sun"
-                },
-                "B": {
-                    "position": "H1",
-                    "track": "Don't let me be misunderstood"
-                },
-                "artist": "Animals",
-                "year": 1964
-            },
-            "right": {
-                "A": {
-                    "position": "S1",
-                    "track": "A Whiter Shade of Pale"
-                },
-                "B": {
-                    "position": "T1",
-                    "track": "Lime Street Blues"
-                },
-                "artist": "Procol Harum",
-                "year": 1967
-            }
-        },
-        "1": {
-            "left": {
-                "A": {
-                    "position": "G2",
-                    "track": "Born to be wild"
-                },
-                "B": {
-                    "position": "H2",
-                    "track": "Magic Carpet Ride"
-                },
-                "artist": "Steppenwolf",
-                "year": 1968
-            },
-            "right": {
-                "A": {
-                    "position": "S2",
-                    "track": "The Long and Winding Road"
-                },
-                "B": {
-                    "position": "T2",
-                    "track": "For You Blue"
-                },
-                "artist": "Beatles",
-                "year": 1969
-            }
-        },
-        "2": {
-            "left": {
-                "A": {
-                    "position": "G3",
-                    "track": "Bad Moon Rising"
-                },
-                "B": {
-                    "position": "H3",
-                    "track": "Lodi"
-                },
-                "artist": "Creedence Clearwater Revival",
-                "year": 1969
-            },
-            "right": {
-                "A": {
-                    "position": "S3",
-                    "track": "Riders on the Storm"
-                },
-                "B": {
-                    "position": "T3",
-                    "track": "Changeling"
-                },
-                "artist": "Doors",
-                "year": 1971
-            }
-        },
-        "3": {
-            "left": {
-                "A": {
                     "position": "G4",
                     "track": "Easy Livin'"
                 },
@@ -732,6 +732,190 @@
                 },
                 "artist": "Electric Light Orchestra",
                 "year": 1973
+            }
+        },
+        "5": {
+            "left": {
+                "A": {
+                    "position": "J4",
+                    "track": "Halo of Flies"
+                },
+                "B": {
+                    "position": "K4",
+                    "track": "Under my Wheels"
+                },
+                "artist": "Alice Cooper",
+                "year": 1972
+            },
+            "right": {
+                "A": {
+                    "position": "U4",
+                    "track": "Angie"
+                },
+                "B": {
+                    "position": "V4",
+                    "track": "Silver Train"
+                },
+                "artist": "Rolling Stones",
+                "year": 1973
+            }
+        },
+        "6": {
+            "left": {
+                "A": {
+                    "position": "S7",
+                    "track": "Smugglers Blues"
+                },
+                "B": {
+                    "position": "T7",
+                    "track": "New Love"
+                },
+                "artist": "Glenn Frey",
+                "year": 1984
+            },
+            "right": {
+                "A": {
+                    "position": "C8",
+                    "track": "Dancing In the Street"
+                },
+                "B": {
+                    "position": "D8",
+                    "track": "Dancing In The Street "
+                },
+                "artist": "David Bowie and Mick Jagger",
+                "year": 1985
+            }
+        },
+        "7": {
+            "left": {
+                "A": {
+                    "position": "U7",
+                    "track": "Careless Whisper"
+                },
+                "B": {
+                    "position": "V7",
+                    "track": "Careless Whisper"
+                },
+                "artist": "George Michael",
+                "year": 1984
+            },
+            "right": {
+                "A": {
+                    "position": "E8",
+                    "track": "You can Leave your Hat on"
+                },
+                "B": {
+                    "position": "F8",
+                    "track": "Shelter Me"
+                },
+                "artist": "Joe Cocker",
+                "year": 1987
+            }
+        },
+        "8": {
+            "left": {
+                "A": {
+                    "position": "A8",
+                    "track": "The Reflex"
+                },
+                "B": {
+                    "position": "B8",
+                    "track": "Make me smile"
+                },
+                "artist": "Duran Duran",
+                "year": 1984
+            },
+            "right": {
+                "A": {
+                    "position": "G8",
+                    "track": "Unchain my Heart"
+                },
+                "B": {
+                    "position": "H8",
+                    "track": "The One"
+                },
+                "artist": "Joe Cocker",
+                "year": 1987
+            }
+        }
+    },
+    "5": {
+        "1": {
+            "left": {
+                "A": {
+                    "position": "A5",
+                    "track": "Smoke on the Water"
+                },
+                "B": {
+                    "position": "B5",
+                    "track": "Smoke on the Water (live)"
+                },
+                "artist": "Deep Purple",
+                "year": 1973
+            },
+            "right": {
+                "A": {
+                    "position": "L5",
+                    "track": "One of these nights"
+                },
+                "B": {
+                    "position": "M5",
+                    "track": "Visions"
+                },
+                "artist": "Eagles",
+                "year": 1975
+            }
+        },
+        "2": {
+            "left": {
+                "A": {
+                    "position": "C5",
+                    "track": "Desperado"
+                },
+                "B": {
+                    "position": "D5",
+                    "track": "Silver Threads"
+                },
+                "artist": "Linda Rondstadt",
+                "year": 1973
+            },
+            "right": {
+                "A": {
+                    "position": "N5",
+                    "track": "Bohemian Rhapsody"
+                },
+                "B": {
+                    "position": "P5",
+                    "track": "I'm in love with"
+                },
+                "artist": "Queen",
+                "year": 1975
+            }
+        },
+        "3": {
+            "left": {
+                "A": {
+                    "position": "E5",
+                    "track": "The Jean Genie"
+                },
+                "B": {
+                    "position": "F5",
+                    "track": "Ziggy Stardust"
+                },
+                "artist": "David Bowie",
+                "year": 1973
+            },
+            "right": {
+                "A": {
+                    "position": "Q5",
+                    "track": "Dancing Queen"
+                },
+                "B": {
+                    "position": "R5",
+                    "track": "That's me"
+                },
+                "artist": "ABBA",
+                "year": 1976
             }
         },
         "4": {
@@ -763,190 +947,6 @@
         "5": {
             "left": {
                 "A": {
-                    "position": "G6",
-                    "track": "Year of the Cat"
-                },
-                "B": {
-                    "position": "H6",
-                    "track": "Broadway Hotel"
-                },
-                "artist": "Al Stewart",
-                "year": 1977
-            },
-            "right": {
-                "A": {
-                    "position": "S6",
-                    "track": "Don't Bring me down"
-                },
-                "B": {
-                    "position": "T6",
-                    "track": "Dreaming of 4000"
-                },
-                "artist": "Electric Light Orchestra",
-                "year": 1979
-            }
-        },
-        "6": {
-            "left": {
-                "A": {
-                    "position": "G7",
-                    "track": "Old and Wise"
-                },
-                "B": {
-                    "position": "H7",
-                    "track": "Children of the Moon"
-                },
-                "artist": "Alan Parsons Project",
-                "year": 1982
-            },
-            "right": {
-                "A": {
-                    "position": "S7",
-                    "track": "Smugglers Blues"
-                },
-                "B": {
-                    "position": "T7",
-                    "track": "New Love"
-                },
-                "artist": "Glenn Frey",
-                "year": 1984
-            }
-        },
-        "7": {
-            "left": {
-                "A": {
-                    "position": "G8",
-                    "track": "Unchain my Heart"
-                },
-                "B": {
-                    "position": "H8",
-                    "track": "The One"
-                },
-                "artist": "Joe Cocker",
-                "year": 1987
-            },
-            "right": {
-                "A": {
-                    "position": "S8",
-                    "track": "Happy Birthday"
-                },
-                "B": {
-                    "position": "T8",
-                    "track": "Happy Birthday"
-                },
-                "artist": "Stevie Wonder",
-                "year": 1980
-            }
-        }
-    },
-    "4": {
-        "0": {
-            "left": {
-                "A": {
-                    "position": "J1",
-                    "track": "(I Can't Get No) Satisfaction"
-                },
-                "B": {
-                    "position": "K1",
-                    "track": "The under assistant"
-                },
-                "artist": "Rolling Stones",
-                "year": 1965
-            },
-            "right": {
-                "A": {
-                    "position": "U1",
-                    "track": "Light my Fire"
-                },
-                "B": {
-                    "position": "V1",
-                    "track": "The Chrystal Ship"
-                },
-                "artist": "Doors",
-                "year": 1967
-            }
-        },
-        "1": {
-            "left": {
-                "A": {
-                    "position": "J2",
-                    "track": "Hey Jude"
-                },
-                "B": {
-                    "position": "K2",
-                    "track": "Revolution"
-                },
-                "artist": "Beatles",
-                "year": 1968
-            },
-            "right": {
-                "A": {
-                    "position": "U2",
-                    "track": "Space Oddity"
-                },
-                "B": {
-                    "position": "V2",
-                    "track": "Man who sold the World"
-                },
-                "artist": "David Bowie",
-                "year": 1969
-            }
-        },
-        "2": {
-            "left": {
-                "A": {
-                    "position": "J3",
-                    "track": "Child in Time"
-                },
-                "B": {
-                    "position": "K3",
-                    "track": "Woman from Tokyo"
-                },
-                "artist": "Deep Purple",
-                "year": 1970
-            },
-            "right": {
-                "A": {
-                    "position": "U3",
-                    "track": "Imagine"
-                },
-                "B": {
-                    "position": "V3",
-                    "track": "Give Peace a chance"
-                },
-                "artist": "John Lennon",
-                "year": 1971
-            }
-        },
-        "3": {
-            "left": {
-                "A": {
-                    "position": "J4",
-                    "track": "Halo of Flies"
-                },
-                "B": {
-                    "position": "K4",
-                    "track": "Under my Wheels"
-                },
-                "artist": "Alice Cooper",
-                "year": 1972
-            },
-            "right": {
-                "A": {
-                    "position": "U4",
-                    "track": "Angie"
-                },
-                "B": {
-                    "position": "V4",
-                    "track": "Silver Train"
-                },
-                "artist": "Rolling Stones",
-                "year": 1973
-            }
-        },
-        "4": {
-            "left": {
-                "A": {
                     "position": "J5",
                     "track": "You Ain't Seen Nothing Yet "
                 },
@@ -970,59 +970,7 @@
                 "year": 1975
             }
         },
-        "5": {
-            "left": {
-                "A": {
-                    "position": "J6",
-                    "track": "Peter Gunn"
-                },
-                "B": {
-                    "position": "K6",
-                    "track": "Knife Edge"
-                },
-                "artist": "Emerson, Lake & Palmer",
-                "year": 1977
-            },
-            "right": {
-                "A": {
-                    "position": "U6",
-                    "track": "Voulez-Vous"
-                },
-                "B": {
-                    "position": "V6",
-                    "track": "Angel Eyes"
-                },
-                "artist": "ABBA",
-                "year": 1979
-            }
-        },
         "6": {
-            "left": {
-                "A": {
-                    "position": "J7",
-                    "track": "Bad to the Bone"
-                },
-                "B": {
-                    "position": "K7",
-                    "track": "I Drink Alone"
-                },
-                "artist": "George Thorogood",
-                "year": 1982
-            },
-            "right": {
-                "A": {
-                    "position": "U7",
-                    "track": "Careless Whisper"
-                },
-                "B": {
-                    "position": "V7",
-                    "track": "Careless Whisper"
-                },
-                "artist": "George Michael",
-                "year": 1984
-            }
-        },
-        "7": {
             "left": {
                 "A": {
                     "position": "J8",
@@ -1034,6 +982,58 @@
                 },
                 "artist": "Guns N' Roses",
                 "year": 1987
+            },
+            "right": {
+                "A": {
+                    "position": "Q8",
+                    "track": "Black Velvet"
+                },
+                "B": {
+                    "position": "R8",
+                    "track": "If You want To"
+                },
+                "artist": "Alannah Myles",
+                "year": 1990
+            }
+        },
+        "7": {
+            "left": {
+                "A": {
+                    "position": "L8",
+                    "track": "Fragile"
+                },
+                "B": {
+                    "position": "M8",
+                    "track": "Fragile (Portuegese)"
+                },
+                "artist": "Sting",
+                "year": 1988
+            },
+            "right": {
+                "A": {
+                    "position": "S8",
+                    "track": "Happy Birthday"
+                },
+                "B": {
+                    "position": "T8",
+                    "track": "Happy Birthday"
+                },
+                "artist": "Stevie Wonder",
+                "year": 1980
+            }
+        },
+        "8": {
+            "left": {
+                "A": {
+                    "position": "N8",
+                    "track": "Stay"
+                },
+                "B": {
+                    "position": "P8",
+                    "track": "Rosie"
+                },
+                "artist": "Jackson Browne",
+                "year": 1978
             },
             "right": {
                 "A": {
