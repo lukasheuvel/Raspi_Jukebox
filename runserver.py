@@ -51,11 +51,7 @@ def main():
         
         signal = interface.encode(selected, 'wallomatic160')
 
-        if False:
-            interface.send_gpio_signal(signal)
-        else:
-            print(selected)
-            print(signal)
+        interface.send_gpio_signal(signal)
             
     return render_template('main.html', Datastore = selection_datastore,
                            RowCount = select_row, ColCount = select_col,

@@ -1,6 +1,6 @@
 import json
 from time import sleep
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 def encode(pos, type):
 
